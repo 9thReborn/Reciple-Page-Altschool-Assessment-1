@@ -5,37 +5,48 @@
   <!-- Page Head -->
   <meta charset="UTF-8" />
   <title>Nigerian Jollof Rice | Authentic West African Recipe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <main class="container">
 
   <!-- ==========================================
          HEADER / PAGE TITLE
     ========================================== -->
-  <header>
-    <h1>&#127467;&#127475; Nigerian Jollof Rice</h1>
-    <p>
+  <header class="recipe-header">
+    <h1 class="recipe-title">&#127467;&#127475; Nigerian Jollof Rice</h1>
+    <p class="recipe-description">
       <em>The crown jewel of West African cuisine</em> &mdash; smoky, deeply spiced,
       and vividly red. Made in <strong>one pot</strong> and loved at every table,
       party, and celebration across Nigeria.
     </p>
-    <p><strong>Cuisine:</strong> Nigerian &nbsp;|&nbsp; <strong>Category:</strong> Main Course &nbsp;|&nbsp;
-      <strong>Difficulty:</strong> <mark>Medium</mark>
-    </p>
+    <div class="recipe-meta">
+      <span class="meta-item"><strong>Cuisine:</strong> Nigerian</span>
+      <span class="meta-item"><strong>Category:</strong> Main Course</span>
+      <span class="meta-item"><strong>Difficulty:</strong> <mark>Medium</mark></span>
+    </div>
     <hr />
   </header>
 
   <!-- ==========================================
          HERO IMAGE
     ========================================== -->
-  <section>
-    <img src="jollof_rice.png"
-      alt="A steaming bowl of authentic Nigerian Jollof Rice garnished with herbs and served with fried plantains"
-      width="800" height="450" />
-    <br />
-    <small>
-      <em>Nigerian Jollof Rice served with fried plantains &mdash; a classic pairing.</em>
-    </small>
+  <section class="hero-section">
+    <div class="image-wrapper">
+      <img src="jollof_rice.png"
+        class="hero-image"
+        alt="A steaming bowl of authentic Nigerian Jollof Rice garnished with herbs and served with fried plantains"
+        width="800" height="450" />
+    </div>
+    <div class="image-caption-wrapper">
+      <small class="image-caption">
+        <em>Nigerian Jollof Rice served with fried plantains &mdash; a classic pairing.</em>
+      </small>
+    </div>
   </section>
 
   <hr />
@@ -43,10 +54,11 @@
   <!-- ==========================================
          RECIPE DETAILS
     ========================================== -->
-  <section>
-    <h2>&#9201; Recipe Details</h2>
+  <section class="recipe-details-section">
+    <h2 class="section-title">&#9201; Recipe Details</h2>
 
-    <table border="1" cellpadding="8" cellspacing="0" width="500">
+    <div class="table-container">
+      <table class="styled-table details-table">
       <thead>
         <tr>
           <th>Detail</th>
@@ -80,15 +92,17 @@
         </tr>
       </tbody>
     </table>
+    </div>
   </section>
 
   <hr />
 
+  <div class="content-grid">
   <!-- ==========================================
          INGREDIENTS
     ========================================== -->
-  <section>
-    <h2>&#128722; Ingredients</h2>
+  <section id="ingredients" class="ingredients-section">
+    <h2 class="section-title">&#128722; Ingredients</h2>
     <p>For <strong>6 servings</strong> &mdash; scale up for a larger party!</p>
 
     <h3>Base</h3>
@@ -129,8 +143,8 @@
   <!-- ==========================================
          INSTRUCTIONS
     ========================================== -->
-  <section>
-    <h2>&#128104;&#8205;&#127859; Instructions</h2>
+  <section id="instructions" class="instructions-section">
+    <h2 class="section-title">&#128104;&#8205;&#127859; Instructions</h2>
 
     <ol>
       <li>
@@ -192,14 +206,15 @@
       </li>
     </ol>
   </section>
+  </div>
 
   <hr />
 
   <!-- ==========================================
          TIPS & NOTES
     ========================================== -->
-  <section>
-    <h2>&#128161; Tips &amp; Notes</h2>
+  <section class="tips-section">
+    <h2 class="section-title">&#128161; Tips &amp; Notes</h2>
 
     <ul>
       <li>
@@ -235,11 +250,12 @@
   <!-- ==========================================
          NUTRITION FACTS
     ========================================== -->
-  <section>
-    <h2>&#128202; Nutrition Facts</h2>
+  <section class="nutrition-section">
+    <h2 class="section-title">&#128202; Nutrition Facts</h2>
     <p><em>Per serving (approx. 300 g) &mdash; values are estimates only.</em></p>
 
-    <table border="1" cellpadding="8" cellspacing="0" width="420">
+    <div class="table-container">
+      <table class="styled-table nutrition-table">
       <thead>
         <tr>
           <th>Nutrient</th>
@@ -285,6 +301,7 @@
         </tr>
       </tbody>
     </table>
+    </div>
 
     <p>
       <small>
@@ -300,8 +317,8 @@
   <!-- ==========================================
          RECIPE SOURCE / CREDITS
     ========================================== -->
-  <section>
-    <h2>&#128279; Recipe Source</h2>
+  <section class="source-section">
+    <h2 class="section-title">&#128279; Recipe Source</h2>
     <p>
       Recipe inspired by:
       <a href="https://www.allnigerianrecipes.com/rice/nigerian-jollof-rice/" target="_blank" rel="noopener noreferrer">
@@ -330,7 +347,7 @@
   <!-- ==========================================
          FOOTER
     ========================================== -->
-  <footer>
+  <footer class="site-footer">
     <p>
       <small>
         Nigerian Jollof Rice Recipe &mdash; Made with &#10084; &mdash; by Silas Adinoyi &mdash;
@@ -339,6 +356,7 @@
     </p>
   </footer>
 
+  </main>
 </body>
 
 </html>
